@@ -2,10 +2,11 @@ import Link from "next/link";
 
 export default function NotFound() {
     return (
-        <div>
+        <div className="page-container">
             <h2>Page not found :(</h2>
+            <p className="text-large">404</p>
             <Link href={'/'}>
-               <button></button>
+                <button>Home</button>
             </Link>
         </div>
     )
