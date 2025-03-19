@@ -6,12 +6,14 @@ import { useProducts } from "@/context/ProductContext"
 
 
 export default function Products(props) {
+    console.log("reached here");
     const { planner, stickers } = props
     const [portalImage, setPortalImage] = useState(null)
 
     const { handleIncrementProduct, cart } = useProducts()
     console.log(cart)
 
+    //debugger;
     if (!stickers.length || !planner) { return null }
 
     return (
@@ -42,7 +44,7 @@ export default function Products(props) {
                             Medieval Dragon Month Planner
                         </p>
                         <h3><span>$</span>14.99</h3>
-                        <p>Step into a realm of fantasy and organization with our <strong>Medieval Dragon Month Planner</strong>! This high-resolution PNG asset combines the fierce elegance of dragons with intricate medieval designs to create a planner that's not only functional but also a work of art. Whether you&apos ;re jotting down quests, planning battles, or just scheduling your weekly grocery run, this planner is your ultimate companion.</p>
+                        <p>Step into a realm of fantasy and organization with our <strong>Medieval Dragon Month Planner</strong>! This high-resolution PNG asset combines the fierce elegance of dragons with intricate medieval designs to create a planner that's not only functional but also a work of art. Whether you&apos;re jotting down quests, planning battles, or just scheduling your weekly grocery run, this planner is your ultimate companion.</p>
                         <ul>
                             <li><strong>Epic Dragon Artwork:</strong> Stunning hand-drawn dragon motifs and medieval-inspired borders make every month feel legendary.
                             </li>

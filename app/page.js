@@ -17,13 +17,13 @@ export async function getProducts() {
 
 export default async function Home(props) {
     const products = await getProducts()
-
+    console.log(products)
     let planner = null
     let stickers = []
 
 
     for (let product of products) {
-        if (product.name === 'Medieval Dragon Month Planner') {
+        if (product.name === 'Medieval Dragon Month Planner.png') {
             planner = product
             continue
         }
