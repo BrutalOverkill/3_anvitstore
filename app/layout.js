@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <header>
               <div className="header-content">
                 <Link href={'/'}>
-                  <h1>Anvit'sStore</h1>
+                  <h1>Anvit&apos;sStore</h1>
                 </Link>
                 <h5 className="mid-text">- Cool stuff for cool people -</h5>
                 <Cart />
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
               <div className="links-container">
                 <div>
                   <h3>AnvitSingh</h3>
-                  <Link target="_blank" href={'/'}>Anvit's Hub</Link>
+                  <Link target="_blank" href={'/'}>Anvit&apos; Hub</Link>
                   <Link target="_blank" href={'/'}>Roadmap</Link>
                 </div>
                 <div>
