@@ -24,7 +24,7 @@ export default function ImageBanner() {
                 <div>
                     <div>
                         <h3>Welcome to</h3>
-                        <h1>The Smoljames Store</h1>
+                        <h1>The Anvit's Store</h1>
                     </div>
                     <div>
                         <button>Shop stickers</button>
