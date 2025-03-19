@@ -7,7 +7,7 @@ import EmailInput from "@/components/EmailInput";
 import ProductsProvider from "@/context/ProductContext";
 
 export const metadata = {
-  title: "Smolstore",
+  title: "AnvitStore",
   description: "A super cool store for programmers and productivity fiends!",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <header>
               <div className="header-content">
                 <Link href={'/'}>
-                  <h1>Smolstore</h1>
+                  <h1>Anvit'sStore</h1>
                 </Link>
                 <h5 className="mid-text">- Cool stuff for cool people -</h5>
                 <Cart />
@@ -42,8 +42,8 @@ export default function RootLayout({ children }) {
 
               <div className="links-container">
                 <div>
-                  <h3>Smoljames</h3>
-                  <Link target="_blank" href={'/'}>Smoljames Hub</Link>
+                  <h3>AnvitSingh</h3>
+                  <Link target="_blank" href={'/'}>Anvit's Hub</Link>
                   <Link target="_blank" href={'/'}>Roadmap</Link>
                 </div>
                 <div>
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
               </div>
 
               <div className="socials">
-                <p>© <a href="https://www.smoljames.com" target="_blank">Smoljames</a> 2025<br />Built with NextJS & <a target="_blank" href="https://www.fantacss.smoljames.com">FantaCSS</a> 🔥</p>
+                <p>© <a href="https://www.anvitdoestech.com" target="_blank">AnvitSingh</a> 2025<br />Built with NextJS 🔥</p>
                 <div className="social-links">
                   <Link href={'/'} target="_blank"><i className="fa-brands fa-github"></i></Link>
                   <Link href={'/'} target="_blank"><i className="fa-brands fa-youtube"></i></Link>
