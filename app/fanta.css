@@ -63,55 +63,6 @@
     --text-selection: '';
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --background-primary: #05070f;
-        --background-secondary: #0e101e;
-        --background-tertiary: #121424;
-        --background-accent: '';
-        --background-compliment: '';
-        --background-gradient: '';
-        --background-muted: #1a1e32;
-
-        --color-primary: white;
-        --color-secondary: '';
-        --color-tertiary: '';
-        --color-accent: '';
-        --color-compliment: '';
-        --color-gradient: '';
-        --color-muted: ;
-        --color-link: #60a5fa;
-        --color-link-transparent: rgba(37, 99, 235, 0.1);
-
-        --color-success: '';
-        --color-warning: '';
-        --color-error: '';
-        --color-info: '';
-        --color-highlight: #fef9c3;
-
-        --gradient-start: #9580ff;
-        --gradient-end: #80ffea;
-
-        --border-primary: #29325b;
-        --border-secondary: #323c71;
-        --border-highlight: #4649af;
-        --border-tertiary: '';
-
-        --shadow-dark: '';
-        --shadow-light: '';
-        --shadow-text: '';
-
-        --padding-small: 1rem;
-        --padding-large: 2rem;
-
-        --border-radius-small: 0.5rem;
-        --border-radius-large: 0.75rem;
-        --highlight-border-radius: 0.5rem;
-
-        --text-selection: '';
-    }
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -148,7 +99,8 @@ button {
     width: fit-content;
 }
 
-h1 {
+h1,
+.text-large {
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
@@ -158,7 +110,8 @@ h2 {
     line-height: 2rem;
 }
 
-h3 {
+h3,
+.text-medium {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
@@ -655,7 +608,8 @@ details[open] summary {
         line-height: 1.5rem;
     }
 
-    h1 {
+    h1,
+    .text-large {
         font-size: 2.25rem;
         line-height: 2.5rem;
     }
@@ -665,7 +619,8 @@ details[open] summary {
         line-height: 2.25rem;
     }
 
-    h3 {
+    h3,
+    .text-medium {
         font-size: 1.5rem;
         line-height: 2rem;
     }
