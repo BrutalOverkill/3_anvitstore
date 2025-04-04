@@ -62,8 +62,8 @@ export default function RootLayout({ children }) {
                 <p>© <a href="https://www.anvitdoestech.com" target="_blank">AnvitSingh</a> 2025<br />Built with NextJS 🔥</p>
                 <div className="social-links">
                   <Link href={'https://github.com/BrutalOverkill/3_anvitstore'} target="_blank"><i className="fa-brands fa-github"></i></Link>
-                  <Link href={'/'} target="_blank"><i className="fa-brands fa-youtube"></i></Link>
-                  <Link href={'/'} target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
+                  <Link href={'#'} target="_blank"><i className="fa-brands fa-youtube"></i></Link>
+                  <Link href={'https://www.linkedin.com/in/anvit2501/'} target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
                 </div>
               </div>
             </footer>
