@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AnvitStore 🛍️
 
-## Getting Started
+[![AWS Amplify](https://img.shields.io/badge/Deployed%20on-AWS%20Amplify-orange)](https://aws.amazon.com/amplify/)
 
-First, run the development server:
+A developer-focused e-commerce store selling programming-themed stickers and planners, built with Next.js and deployed with AWS Amplify for full-stack hosting.
 
+🔗 **Live Store**: [https://master.d2j81piylpyl5g.amplifyapp.com](https://master.d2j81piylpyl5g.amplifyapp.com)
+
+![AnvitStore Showcase](https://via.placeholder.com/1200x600?text=AnvitStore+AWS+Deployment) 
+
+## Features 🚀
+- 🛒 **Developer Merchandise**: Stickers featuring programming language logos
+- 🔄 **Full-Stack Deployment**: Frontend + backend on AWS Amplify
+- 💳 **Stripe Integration**: Secure payment processing
+- 📦 **Order Management**: Backend API for order processing
+- 📱 **Responsive Design**: Mobile-first approach
+
+## Tech Stack 💻
+### Frontend
+- Next.js 14 (App Router)
+- Tailwind CSS
+- Stripe Checkout
+
+### Backend
+- Next.js API Routes
+- AWS Amplify Hosting
+
+## AWS Amplify Deployment 🌐
+
+### Prerequisites
+- AWS account
+- Amplify CLI installed
+- Stripe account
+
+### Deployment Steps
+1. **Initialize Amplify**:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install -g @aws-amplify/cli
+amplify init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Configure Backend:**:
+```bash
+amplify add api
+# Select REST or GraphQL based on your needs
+amplify add auth # For authentication
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Environment Variables:**:
+```bash
+STRIPE_SECRET_KEY=your_live_key
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_pk_key
+NEXT_PUBLIC_AMPLIFY_ENDPOINT=your_api_endpointn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Build Settings:**:
+```bash
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+```
 
-## Learn More
+5. **Deploy:**:
+```bash
+amplify push
+amplify publish
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Troubleshooting 🛠️
+Common Amplify issues:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Build Fails: Check Node.js version in build settings
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- API Timeouts: Increase Lambda timeout duration
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Env Vars Missing: Verify in Amplify Console > Environment variables
