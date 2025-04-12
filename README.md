@@ -87,3 +87,27 @@ Common Amplify issues:
 - API Timeouts: Increase Lambda timeout duration
 
 - Env Vars Missing: Verify in Amplify Console > Environment variables
+
+## Contributing 🤝
+I welcome contributions! Please follow these steps:
+
+- Fork the repository
+
+- Create a new branch (git checkout -b feature/your-feature)
+
+- Commit your changes (git commit -m 'Add some feature')
+
+- Push to the branch (git push origin feature/your-feature)
+
+- Open a Pull Request
+
+Please ensure your code follows the existing style and includes appropriate tests.
+
+## Support ❤️
+If you find Spendorra useful, consider:
+
+- ⭐ Starring this repository on GitHub
+
+- 🐛 Reporting issues in the GitHub Issues section
+
+- 💡 Suggesting new features
